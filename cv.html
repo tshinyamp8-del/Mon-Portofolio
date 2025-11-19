@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CV — Kamey Tshinyam Parfait</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #071026;
+            --muted: #9aa4b2;
+            --accent: #7c5cff;
+            --card: #081626
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            font-family: Inter, system-ui;
+            background: var(--bg);
+            color: #eaf3ff;
+            padding: 28px;
+            display: flex;
+            justify-content: center
+        }
+
+        .wrap {
+            width: 100%;
+            max-width: 900px
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px
+        }
+
+        a {
+            color: var(--muted);
+            text-decoration: none;
+            font-weight: 600
+        }
+
+        .content {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
+            padding: 22px;
+            border-radius: 12px;
+            box-shadow: 0 12px 40px rgba(2, 6, 23, 0.6)
+        }
+
+        h1 {
+            margin: 0 0 6px 0
+        }
+
+        p.sub {
+            color: var(--muted)
+        }
+
+        .placeholder {
+            min-height: 280px;
+            display: grid;
+            place-items: center;
+            color: var(--muted);
+            border: 2px dashed rgba(255, 255, 255, 0.03);
+            border-radius: 10px
+        }
+
+        .back {
+            margin-top: 16px;
+            display: inline-block
+        }
+
+        @media (max-width:560px) {
+            .content {
+                padding: 16px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div>
+                <strong>Kamey Tshinyam Parfait</strong>
+                <div style="color:var(--muted);font-size:13px">CV — À compléter</div>
+            </div>
+            <nav>
+                <a href="index.html">← Accueil</a>
+            </nav>
+        </header>
+
+        <main class="content" role="main">
+            <h1>Curriculum Vitae</h1>
+            <p class="sub">Cette page est prête pour ton CV — tu peux y ajouter ton expérience, formation, compétences
+                et diplômes. Voici une structure de départ :</p>
+
+            <div style="margin-top:16px;display:grid;gap:12px">
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+                    <div class="placeholder">Photo / Portrait</div>
+                    <div style="display:flex;flex-direction:column;gap:10px">
+                        <div style="background:rgba(255,255,255,0.02);padding:12px;border-radius:10px">
+                            <strong>Contact</strong>
+                            <div style="color:var(--muted);font-size:13px">tshinyamp8@gmail.com · +243 854772265</div>
+                        </div>
+
+                        <div style="background:rgba(255,255,255,0.02);padding:12px;border-radius:10px">
+                            <strong>Compétences</strong>
+                            <div style="color:var(--muted);font-size:13px">HTML · CSS · (AJOUTER)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background:rgba(255,255,255,0.02);padding:12px;border-radius:10px">
+                    <strong>Expérience</strong>
+                    <p style="color:var(--muted);margin:8px 0 0 0">Ajoute ici tes expériences professionnelles.</p>
+                </div>
+
+                <div style="background:rgba(255,255,255,0.02);padding:12px;border-radius:10px">
+                    <strong>Formation</strong>
+                    <p style="color:var(--muted);margin:8px 0 0 0">Ajoute ta formation et diplômes.</p>
+                </div>
+            </div>
+
+            <a class="back" href="index.html">← Retour à l'accueil</a>
+        </main>
+    </div>
+</body>
+
+</html>
