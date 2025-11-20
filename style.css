@@ -18,14 +18,16 @@ body {
 .photo {
     width: 220px;
     height: 220px;
-    border-radius: 50%;
     overflow: hidden;
     margin: 0 auto;
+    border-radius: 12px;
+    /* Optionnel : donne des coins arrondis élégants */
 }
 
 .photo img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    border-radius: 50% !important;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    /* IMPORTANT : enlève le rond */
 }
