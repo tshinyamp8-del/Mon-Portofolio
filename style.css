@@ -16,12 +16,12 @@ body {
 }
 
 .photo {
-    width: 200px;
-    /* taille du cadre */
-    height: 200px;
+    width: 300px;
+    /* ← tu peux changer cette valeur (200, 250, 300 etc.) */
+    height: 300px;
     border-radius: 50%;
     overflow: hidden;
-    margin: 0 auto;
+    margin: 20px auto;
     display: flex;
     justify-content: center;
     align-items: center;
