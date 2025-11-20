@@ -7,11 +7,29 @@ body {
 }
 
 .photo img {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
 }
 
+.photo {
+    width: 200px;
+    /* taille du cadre */
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
+}
+
+.photo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
