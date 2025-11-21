@@ -63,3 +63,27 @@ body {
 .social-links a:hover {
     color: #ff5722;
 }
+
+.socials {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.socials a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: #222;
+    color: white;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    background: #00aaff;
+    transform: scale(1.05);
+    color: white;
+}
