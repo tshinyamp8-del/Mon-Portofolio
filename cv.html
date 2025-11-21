@@ -95,40 +95,37 @@
             </nav>
         </header>
 
-        <main class="content" role="main">
-            <h1>Curriculum Vitae</h1>
-            <p class="sub">Cette page est prête pour ton CV — tu peux y ajouter ton expérience, formation, compétences
-                et diplômes. Voici une structure de départ :</p>
+        <main class="cv-container">
 
-            <div style="margin-top:16px;display:grid;gap:12px">
-                <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
-                    <div class="placeholder">Photo / Portrait</div>
-                    <div style="display:flex;flex-direction:column;gap:10px">
-                        <div style="background:rgba(255,255,255,0.02);padding:12px;border-radius:10px">
-                            <strong>Contact</strong>
-                            <div style="color:var(--muted);font-size:13px">tshinyamp8@gmail.com · +243 854772265</div>
-                        </div>
+            <h1>Mon CV</h1>
 
-                        <div style="background:rgba(255,255,255,0.02);padding:12px;border-radius:10px">
-                            <strong>Compétences</strong>
-                            <div style="color:var(--muted);font-size:13px">HTML · CSS · (AJOUTER)</div>
-                        </div>
-                    </div>
-                </div>
+            <section>
+                <h2>Profil</h2>
+                <p>Développeur Web débutant passionné par le design, le développement et l'apprentissage continu.</p>
+            </section>
 
-                <div style="background:rgba(255,255,255,0.02);padding:12px;border-radius:10px">
-                    <strong>Expérience</strong>
-                    <p style="color:var(--muted);margin:8px 0 0 0">Ajoute ici tes expériences professionnelles.</p>
-                </div>
+            <section>
+                <h2>Compétences</h2>
+                <ul>
+                    <li>HTML / CSS</li>
+                    <li>Git & GitHub</li>
+                    <li>Responsive design</li>
+                    <li>Linux / Terminal</li>
+                </ul>
+            </section>
 
-                <div style="background:rgba(255,255,255,0.02);padding:12px;border-radius:10px">
-                    <strong>Formation</strong>
-                    <p style="color:var(--muted);margin:8px 0 0 0">Ajoute ta formation et diplômes.</p>
-                </div>
-            </div>
+            <section>
+                <h2>Expérience</h2>
+                <p>Pas d’expérience professionnelle encore — mais en construction 💪</p>
+            </section>
 
-            <a class="back" href="index.html">← Retour à l'accueil</a>
+            <section>
+                <h2>Formation</h2>
+                <p>Autoformation en développement web.</p>
+            </section>
+
         </main>
+
     </div>
 </body>
 
@@ -160,3 +157,32 @@
     <h2>Formation</h2>
     <p>Autoformation en développement web.</p>
 </section>
+
+.cv-container {
+width: 80%;
+max-width: 900px;
+margin: 50px auto;
+text-align: left;
+background: #ffffff;
+padding: 30px;
+border-radius: 10px;
+box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+.cv-container h1 {
+text-align: center;
+margin-bottom: 30px;
+}
+
+.cv-container section {
+margin-bottom: 25px;
+}
+
+.cv-container h2 {
+color: #0077cc;
+margin-bottom: 10px;
+}
+
+.cv-container ul {
+padding-left: 20px;
+}
