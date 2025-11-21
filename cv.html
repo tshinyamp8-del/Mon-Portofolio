@@ -1,132 +1,82 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>CV — Kamey Tshinyam Parfait</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg: #071026;
-            --muted: #9aa4b2;
-            --accent: #7c5cff;
-            --card: #081626;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-family: Inter, system-ui;
-            background: var(--bg);
-            color: #eaf3ff;
-            padding: 28px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .wrap {
-            width: 100%;
-            max-width: 900px;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-
-        a {
-            color: var(--muted);
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .content {
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
-            padding: 22px;
-            border-radius: 12px;
-            box-shadow: 0 12px 40px rgba(2, 6, 23, 0.6);
-        }
-
-        h1 {
-            margin: 0 0 6px 0;
-        }
-
-        p.sub {
-            color: var(--muted);
-        }
-
-        .placeholder {
-            min-height: 280px;
-            display: grid;
-            place-items: center;
-            color: var(--muted);
-            border: 2px dashed rgba(255, 255, 255, 0.03);
-            border-radius: 10px;
-        }
-
-        .back {
-            margin-top: 16px;
-            display: inline-block;
-        }
-
-        @media (max-width:560px) {
-            .content {
-                padding: 14px;
-            }
-        }
-    </style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="wrap">
-        <header>
-            <div>
-                <strong>Kamey Tshinyam Parfait</strong>
-                <div style="color:var(--muted);font-size:13px">CV — À compléter</div>
+        <nav>
+            <div class="brand"><strong>Kamey Tshinyam Parfait</strong></div>
+            <div class="menu">
+                <a href="index.html">Accueil</a>
+                <a href="cv.html">CV</a>
+                <a href="projet.html">Projets</a>
+                <a href="contact.html">Contact</a>
             </div>
-            <nav>
-                <a href="index.html">← Accueil</a>
-            </nav>
-        </header>
+        </nav>
 
-        <main class="cv-container">
+        <div class="header-card">
+            <div class="photo"><img src="profil.jpeg" alt="Photo de Kamey"></div>
+            <div class="header-info">
+                <h1>Kamey Tshinyam Parfait</h1>
+                <p>Développeur Web — tshinyamp8@gmail.com — +243 854772265</p>
+                <div class="socials">
+                    <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+                    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </div>
 
-            <h1>Mon CV</h1>
+        <div class="page-grid">
+            <aside class="sidebar">
+                <div class="card">
+                    <h3>Contact</h3>
+                    <p>tshinyamp8@gmail.com<br>+243 854772265</p>
+                    <!-- Lien de téléchargement vers le fichier uploadé localement -->
+                    <p><a class="btn" href="/mnt/data/CV — Kamey Tshinyam Parfait.html" download> Télécharger mon CV</a>
+                    </p>
+                </div>
 
-            <section>
-                <h2>Profil</h2>
-                <p>Développeur Web débutant passionné par le design, le développement et l'apprentissage continu.</p>
-            </section>
+                <div class="card">
+                    <h3>Compétences</h3>
+                    <ul>
+                        <li>HTML / CSS</li>
+                        <li>Git & GitHub</li>
+                        <li>Responsive Design</li>
+                        <li>Linux / Terminal</li>
+                    </ul>
+                </div>
+            </aside>
 
-            <section>
-                <h2>Compétences</h2>
-                <ul>
-                    <li>HTML / CSS</li>
-                    <li>Git & GitHub</li>
-                    <li>Responsive design</li>
-                    <li>Linux / Terminal</li>
-                </ul>
-            </section>
+            <main class="main-card">
+                <div class="section">
+                    <h2>Profil</h2>
+                    <p>Développeur Web débutant passionné par le design, le développement et l'apprentissage continu.
+                    </p>
+                </div>
 
-            <section>
-                <h2>Expérience</h2>
-                <p>Pas d’expérience professionnelle encore — mais en construction 💪</p>
-            </section>
+                <div class="section">
+                    <h2>Expériences & Projets</h2>
+                    <div class="project">
+                        <h3>Portfolio Personnel</h3>
+                        <p>Site en HTML/CSS, hébergé sur GitHub Pages.</p>
+                    </div>
+                </div>
 
-            <section>
-                <h2>Formation</h2>
-                <p>Autoformation en développement web.</p>
-            </section>
+                <div class="section">
+                    <h2>Formation</h2>
+                    <p>Autoformation en développement web.</p>
+                </div>
+            </main>
+        </div>
 
-        </main>
-
+        <footer>© 2025 — Kamey Tshinyam Parfait</footer>
     </div>
 </body>
 

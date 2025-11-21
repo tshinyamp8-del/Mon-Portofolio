@@ -1,303 +1,72 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Kamey Tshinyam Parfait — Portfolio</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Accueil — Kamey Tshinyam Parfait</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
-    <style>
-        :root {
-            --bg: #0f1724;
-            --card: #0b1220;
-            --muted: #9aa4b2;
-            --accent: #7c5cff;
-            --glass: rgba(255, 255, 255, 0.04);
-            --radius: 14px;
-            --max-width: 1100px;
-        }
-
-        * {
-            box-sizing: border-box
-        }
-
-        html,
-        body {
-            height: 100%
-        }
-
-        body {
-            margin: 0;
-            font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-            background: linear-gradient(180deg, #071026 0%, #061022 60%);
-            color: #e6eef8;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            display: flex;
-            justify-content: center;
-            padding: 32px;
-        }
-
-        .site {
-            width: 100%;
-            max-width: var(--max-width);
-            display: grid;
-            grid-template-columns: 1fr 360px;
-            gap: 28px;
-            align-items: start;
-        }
-
-        header {
-            grid-column: 1 / -1;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 6px;
-        }
-
-        .brand {
-            display: flex;
-            gap: 12px;
-            align-items: center
-        }
-
-        .logo {
-            width: 46px;
-            height: 46px;
-            border-radius: 10px;
-            background: linear-gradient(135deg, var(--accent), #4bd5ff);
-            display: grid;
-            place-items: center;
-            font-weight: 700;
-            color: #071026;
-            box-shadow: 0 6px 18px rgba(124, 92, 255, 0.12);
-        }
-
-        nav a {
-            color: var(--muted);
-            text-decoration: none;
-            margin-left: 18px;
-            font-weight: 600;
-        }
-
-        nav a:hover {
-            color: var(--accent)
-        }
-
-        /* Main hero */
-        .hero {
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
-            padding: 28px;
-            border-radius: var(--radius);
-            box-shadow: 0 6px 30px rgba(2, 6, 23, 0.6);
-        }
-
-        .hero .title {
-            font-size: 28px;
-            margin: 0 0 6px 0;
-            font-weight: 700
-        }
-
-        .hero .subtitle {
-            color: var(--muted);
-            margin: 0 0 18px 0
-        }
-
-        .contact-list {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            margin-top: 12px
-        }
-
-        .chip {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 10px 12px;
-            background: var(--glass);
-            border-radius: 12px;
-            color: var(--muted);
-            font-weight: 600;
-            width: max-content;
-        }
-
-        /* Right column card */
-        .card {
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
-            border-radius: 16px;
-            padding: 22px;
-            box-shadow: 0 10px 30px rgba(2, 6, 23, 0.6);
-        }
-
-        .photo {
-            width: 100%;
-            height: 320px;
-            border-radius: 12px;
-            background: linear-gradient(135deg, #132033, #0c2030);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--muted);
-            font-size: 14px;
-        }
-
-        .socials {
-            display: flex;
-            gap: 12px;
-            margin-top: 12px
-        }
-
-        .socials a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 44px;
-            height: 44px;
-            border-radius: 10px;
-            background: var(--glass);
-            text-decoration: none;
-            color: var(--muted);
-            font-weight: 600
-        }
-
-        .socials a:hover {
-            color: var(--accent);
-            transform: translateY(-3px);
-            transition: all .18s ease
-        }
-
-        /* Footer quick links */
-        .quick {
-            display: flex;
-            gap: 12px;
-            margin-top: 18px;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            padding: 10px 14px;
-            border-radius: 10px;
-            text-decoration: none;
-            background: transparent;
-            border: 1px solid rgba(255, 255, 255, 0.04);
-            color: var(--muted);
-            font-weight: 600;
-        }
-
-        .btn:hover {
-            border-color: rgba(124, 92, 255, 0.8);
-            color: var(--accent)
-        }
-
-        /* Responsive */
-        @media (max-width:980px) {
-            .site {
-                grid-template-columns: 1fr;
-                padding-bottom: 60px
-            }
-
-            .photo {
-                height: 260px
-            }
-        }
-
-        @media (max-width:520px) {
-            header {
-                flex-direction: column;
-                gap: 12px;
-                align-items: flex-start
-            }
-
-            .hero .title {
-                font-size: 22px
-            }
-
-            .photo {
-                height: 200px
-            }
-
-            nav a {
-                margin-left: 10px
-            }
-        }
-    </style>
 </head>
 
 <body>
-    <main class="site" role="main">
-        <header>
-            <div class="brand">
-                <div class="logo">KT</div>
-                <div>
-                    <div style="font-weight:700">Kamey Tshinyam Parfait</div>
-                    <div style="color:var(--muted);font-size:13px">Développeur · Portfolio</div>
-                </div>
-            </div>
-
-            <nav aria-label="Navigation principale">
+    <div class="wrap">
+        <nav>
+            <div class="brand"><strong>Kamey Tshinyam Parfait</strong></div>
+            <div class="menu">
                 <a href="index.html">Accueil</a>
                 <a href="cv.html">CV</a>
                 <a href="projet.html">Projets</a>
                 <a href="contact.html">Contact</a>
-            </nav>
+            </div>
+        </nav>
 
+        <header class="header-card">
+            <div class="photo"><img src="profil.jpeg" alt="Photo de Kamey"></div>
+            <div class="header-info">
+                <h1>Kamey Tshinyam Parfait</h1>
+                <p>Développeur Web — Création de sites modernes et responsive</p>
+                <div class="socials">
+                    <a href="https://twitter.com/" target="_blank">X</a>
+                    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                    <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+                    <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+                </div>
+            </div>
         </header>
 
-        <section class="hero card" aria-labelledby="hero-title">
-            <h1 id="hero-title" class="title">Kamey Tshinyam Parfait</h1>
-            <p class="subtitle">Bienvenue sur mon portfolio — développeur / créatif. Contactez-moi ou suivez-moi sur les
-                réseaux ci-dessous.</p>
+        <main class="main-card">
+            <section class="section">
+                <h2>À propos</h2>
+                <p>Bonjour — je suis Kamey, développeur Web débutant passionné par le design et l'expérience
+                    utilisateur. Ce portfolio présente mon CV, mes projets et mes coordonnées.</p>
+            </section>
 
-            <div class="contact-list" aria-hidden="false">
-                <div class="chip">✉ <a href="mailto:tshinyamp8@gmail.com"
-                        style="color:inherit;text-decoration:none">tshinyamp8@gmail.com</a></div>
-                <div class="chip">📞 <a href="tel:+243854772265" style="color:inherit;text-decoration:none">+243
-                        854772265</a></div>
-            </div>
+            <section class="section">
+                <h2>Projets en avant</h2>
 
-            <div style="margin-top:18px;">
-                <div class="quick">
-                    <a class="btn" href="/Mon-Portofolio/cv.html">Voir mon CV</a>
-                    <a class="btn" href="/Mon-Portofolio/projet.html">Projets</a>
-                    <a class="btn" href="/Mon-Portofolio/contact.html">Me contacter</a>
+                <div class="project">
+                    <h3>Portfolio personnel</h3>
+                    <p>Site statique en HTML/CSS hébergé sur GitHub Pages — design glassmorphism.</p>
+                    <a class="btn" href="projet.html">Voir mes projets</a>
                 </div>
-            </div>
 
-
-            </div>
-        </section>
-
-        <aside class="card" aria-label="Photo et réseaux">
-            <div class="photo">
-                <img src="./profil.jpeg" alt="Photo de profil" class="photo-img">
-            </div>
-
-
-
-            <div style="margin-top:14px">
-                <div style="font-weight:700">Me suivre</div>
-                <div class="socials">
-                    <a href="https://x.com/KameyParfa27596?t=TW4e1vmAdG98GqiRmqD7cg&s=09" target="_blank"
-                        rel="noopener noreferrer" aria-label="X (Twitter)">X</a>
-                    <a href="https://www.instagram.com/parfaitkamey?igsh=NDB6djRjdHphZm14" target="_blank"
-                        rel="noopener noreferrer" aria-label="Instagram">IG</a>
-                    <a href="https://www.linkedin.com/in/parfait-kamey-5a0240247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                        target="_blank" rel="noopener noreferrer" <a href="" target="_blank" rel="noopener noreferrer"
-                        aria-label="LinkedIn">in</a>
-                    <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">YT</a>
+                <div class="project">
+                    <h3>Projet à venir</h3>
+                    <p>Description bientôt disponible.</p>
                 </div>
-            </div>
+            </section>
 
-            <div style="margin-top:18px;color:var(--muted);font-size:13px">
-                <div>Adresse email: <strong>tshinyamp8@gmail.com</strong></div>
-                <div>Téléphone: <strong>+243 854772265</strong></div>
-            </div>
-        </aside>
-    </main>
+            <section class="section">
+                <h2>Contact rapide</h2>
+                <p>Email : <a href="mailto:tshinyamp8@gmail.com">tshinyamp8@gmail.com</a></p>
+                <p>Téléphone : +243 854772265</p>
+                <a class="btn" href="contact.html">Me contacter</a>
+            </section>
+        </main>
+
+        <footer>© 2025 — Kamey Tshinyam Parfait</footer>
+    </div>
 </body>
 
 </html>
