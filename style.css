@@ -147,10 +147,14 @@ nav .menu a:hover {
 
 /* Main layout for pages: two columns on desktop */
 .page-grid {
-    display: grid;
-    grid-template-columns: 320px 1fr;
-    gap: 24px;
-    align-items: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
 }
 
 /* left column (sidebar) */
