@@ -283,3 +283,14 @@ footer {
 body:not(.home) .photo {
     display: none;
 }
+
+.subtitle {
+    margin-top: -10px;
+    color: #9aa4b2;
+    font-size: 18px;
+}
+
+.home h1 {
+    margin-top: 10px;
+    font-size: 28px;
+}
