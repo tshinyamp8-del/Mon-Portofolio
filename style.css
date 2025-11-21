@@ -1,140 +1,281 @@
-/* ------------------------------
-   🧱 RESET & BASE GLOBAL
-------------------------------*/
+/* =========================
+   Glassmorphism - Global CSS
+   ========================= */
+
+/* Reset léger */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+html,
 body {
-    font-family: "Inter", Arial, sans-serif;
-    background: #08121e;
-    color: #f3f4f6;
-    text-align: center;
-    padding: 20px;
-}
-
-/* ------------------------------
-   🔹 TITRES & TEXTES
-------------------------------*/
-h1 {
-    margin-bottom: 15px;
-    font-size: 28px;
-}
-
-section {
-    width: 85%;
-    margin: 25px auto;
-    text-align: left;
-}
-
-section h2 {
-    margin-bottom: 10px;
-    color: #4ea3ff;
-    font-size: 22px;
-}
-
-ul li {
-    margin-bottom: 6px;
-}
-
-/* ------------------------------
-   🖼️ PHOTO DE PROFIL
-------------------------------*/
-.photo {
-    width: 220px;
-    height: 260px;
-    overflow: hidden;
-    margin: 20px auto;
-    border-radius: 12px;
-}
-
-.photo img,
-.photo-img {
-    width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 0;
 }
 
-/* ------------------------------
-   🌐 RÉSEAUX SOCIAUX
-------------------------------*/
-.socials {
-    margin-top: 20px;
+:root {
+    --bg-1: linear-gradient(135deg, rgba(10, 16, 27, 1), rgba(6, 12, 20, 1));
+    --glass-bg: rgba(255, 255, 255, 0.06);
+    --glass-border: rgba(255, 255, 255, 0.12);
+    --accent: rgba(124, 92, 255, 0.95);
+    --muted: #9aa4b2;
+    --text: #eaf3ff;
+    --card-shadow: 0 8px 30px rgba(3, 6, 12, 0.6);
+    --radius: 14px;
+    --gap: 18px;
+}
+
+/* Body */
+body {
+    font-family: "Inter", system-ui, Arial, sans-serif;
+    background: var(--bg-1);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    padding: 36px 18px;
     display: flex;
-    gap: 15px;
     justify-content: center;
 }
 
-.socials a {
+/* Wrapper (centre tout) */
+.wrap {
+    width: 100%;
+    max-width: 1100px;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+nav .brand {
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+nav .menu {
+    display: flex;
+    gap: 12px;
+}
+
+nav .menu a {
+    color: var(--muted);
     text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-    padding: 10px 14px;
-    border-radius: 8px;
-    background: #1e293b;
+    padding: 8px 12px;
+    border-radius: 10px;
+    transition: all .18s ease;
+}
+
+nav .menu a:hover {
     color: white;
-    transition: 0.3s;
+    background: rgba(255, 255, 255, 0.03);
+    transform: translateY(-2px);
+}
+
+/* Page header card */
+.header-card {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    padding: 18px;
+    box-shadow: var(--card-shadow);
+    backdrop-filter: blur(8px) saturate(120%);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+/* profile image container */
+.photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 12px;
+    overflow: hidden;
+    flex: 0 0 140px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* header text */
+.header-info {
+    flex: 1;
+}
+
+.header-info h1 {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.header-info p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* Socials compact */
+.socials {
+    display: flex;
+    gap: 8px;
+}
+
+.socials a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.02);
+    color: var(--muted);
+    text-decoration: none;
+    transition: .18s;
 }
 
 .socials a:hover {
-    background: #4ea3ff;
-    transform: scale(1.05);
+    color: white;
+    background: linear-gradient(90deg, rgba(124, 92, 255, 0.18), rgba(78, 163, 255, 0.12));
 }
 
-/* ------------------------------
-   📌 BOUTONS / ACTIONS
-------------------------------*/
+/* Main layout for pages: two columns on desktop */
+.page-grid {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 24px;
+    align-items: start;
+}
+
+/* left column (sidebar) */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+
+.card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 6px 20px rgba(3, 6, 12, 0.45);
+    backdrop-filter: blur(6px) saturate(120%);
+}
+
+/* contact small */
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.card p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* main content area */
+.main-card {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: var(--card-shadow);
+}
+
+/* sections inside main */
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    color: var(--accent);
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.section p,
+.section ul,
+.section li {
+    color: var(--text);
+    font-size: 15px;
+}
+
+/* project card */
+.project {
+    border-radius: 10px;
+    padding: 14px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    margin-bottom: 12px;
+}
+
+/* CTA buttons */
 .btn {
     display: inline-block;
-    background-color: #4ea3ff;
-    padding: 10px 20px;
+    background: linear-gradient(90deg, var(--accent), rgba(78, 163, 255, 0.9));
     color: white;
-    border-radius: 8px;
+    padding: 10px 14px;
+    border-radius: 10px;
     text-decoration: none;
-    margin: 10px;
-    transition: 0.3s;
+    font-weight: 600;
+    transition: transform .18s ease;
 }
 
 .btn:hover {
-    background: #0077cc;
+    transform: translateY(-3px);
 }
 
-/* ------------------------------
-   📁 SECTIONS (CV / PROJETS)
-------------------------------*/
-.project {
-    border: 1px solid #334155;
-    padding: 15px;
-    margin: 20px auto;
-    width: 85%;
-    border-radius: 10px;
-    transition: 0.3s;
+/* Footer small */
+footer {
+    margin-top: 28px;
+    color: var(--muted);
+    font-size: 13px;
+    text-align: center;
 }
 
-.project:hover {
-    background: rgba(255, 255, 255, 0.05);
-}
-
-/* ------------------------------
-   📱 RESPONSIVE
-------------------------------*/
-@media(max-width: 600px) {
+/* Responsive */
+@media (max-width: 880px) {
+    .page-grid {
+        grid-template-columns: 1fr;
+    }
 
     .photo {
-        width: 180px;
-        height: 200px;
+        width: 120px;
+        height: 120px;
+        flex: 0 0 120px;
     }
 
-    section {
-        width: 95%;
+    .header-card {
+        flex-direction: row;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 520px) {
+    body {
+        padding: 18px;
     }
 
-    .btn {
-        width: 90%;
-        display: block;
-        margin: 10px auto;
+    .header-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
     }
+
+    nav .menu {
+        display: none;
+    }
+}
+
+/* La photo ne doit apparaître que sur la page d'accueil */
+body:not(.home) .photo {
+    display: none;
 }
