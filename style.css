@@ -173,10 +173,10 @@ footer {
 }
 
 .card {
-    width: 60%;
+    width: 80%;
     margin: auto;
     background: rgba(255, 255, 255, 0.05);
-    padding: 30px;
+    padding: 40px;
     border-radius: 20px;
     backdrop-filter: blur(10px);
     margin-top: 80px;
