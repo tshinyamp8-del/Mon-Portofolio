@@ -150,3 +150,54 @@ nav .brand {
     margin-right: 30px;
     color: white;
 }
+
+/* ----- Mise en page générale du header ----- */
+
+.header-info {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+/* Style image profil */
+.header-info .photo {
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.header-info .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Centrer le texte dans la colonne droite */
+.header-info h1,
+.header-info p,
+.header-info .socials {
+    margin: 5px 0;
+}
+
+/* Social icons */
+.socials {
+    display: flex;
+    gap: 15px;
+}
+
+@media (max-width: 600px) {
+    .header-info {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .header-info .socials {
+        justify-content: center;
+    }
+}
