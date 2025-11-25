@@ -254,3 +254,35 @@ footer {
 .send:hover {
     background: #0095c8;
 }
+
+/* ----- CV ALIGNEMENT ----- */
+
+.cv-layout {
+    text-align: left;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cv-layout h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cv-layout section {
+    margin-bottom: 25px;
+}
+
+.cv-layout h2 {
+    color: #00C2FF;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.cv-layout ul {
+    padding-left: 18px;
+}
+
+.cv-layout ul li {
+    margin-bottom: 6px;
+}
