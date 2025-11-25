@@ -340,3 +340,14 @@ footer {
     line-height: 1.7;
     font-size: 18px;
 }
+
+/* Aligner le contenu du CV à droite */
+.cv-page {
+    text-align: right;
+}
+
+.cv-page ul {
+    text-align: right;
+    list-style-position: inside;
+    /* pour garder les puces visibles */
+}
