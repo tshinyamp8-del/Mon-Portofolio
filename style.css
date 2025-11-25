@@ -202,3 +202,55 @@ footer {
     display: inline-block;
     margin: 10px;
 }
+
+/* ---- FORMULAIRE ---- */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.contact-form label {
+    font-weight: 600;
+    color: #cfe7ff;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #00C2FF;
+}
+
+/* Bouton envoyer */
+.send {
+    margin-top: 12px;
+    width: 100%;
+    background: #00C2FF;
+    color: black;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.send:hover {
+    background: #0095c8;
+}
