@@ -165,3 +165,40 @@ footer {
         height: 250px;
     }
 }
+
+.page {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+}
+
+.card {
+    width: 60%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    margin-top: 80px;
+}
+
+.card h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.list li {
+    margin: 5px 0;
+}
+
+.project-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 10px;
+}
