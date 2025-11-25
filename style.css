@@ -291,3 +291,100 @@ body {
         padding: 40px;
     }
 }
+
+body {
+    background: #020b1c;
+    color: white;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+}
+
+/* Menu */
+.menu-top {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.menu-top a {
+    color: #9bbcff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.menu-top a:hover {
+    color: #ffffff;
+}
+
+/* Structure 2 colonnes */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Colonne gauche */
+.left {
+    text-align: center;
+    width: 50%;
+}
+
+.big-photo {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.name {
+    margin-top: 20px;
+    font-size: 28px;
+}
+
+.role {
+    color: #9aa4b2;
+    margin-bottom: 20px;
+}
+
+/* Boutons */
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    background: #4455ff;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #00aaff;
+    transform: scale(1.05);
+}
+
+/* Réseaux sociaux */
+.right {
+    width: 40%;
+    text-align: center;
+}
+
+.socials a {
+    display: inline-block;
+    margin: 10px;
+    color: #9bbcff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.socials a:hover {
+    color: white;
+}
