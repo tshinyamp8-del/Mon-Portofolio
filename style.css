@@ -286,3 +286,32 @@ footer {
 .cv-layout ul li {
     margin-bottom: 6px;
 }
+
+/* LARGEUR UNIFORME POUR CONTACT / CV / PROJET  */
+.page-container {
+    max-width: 900px;
+    width: 90%;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Espacement entre sections CV */
+.page-container section {
+    margin-bottom: 35px;
+}
+
+/* Mise en forme titres */
+.page-container h2 {
+    margin-bottom: 10px;
+    color: #00B8FF;
+}
+
+/* Texte mieux espacé */
+.page-container p,
+.page-container li {
+    line-height: 1.6;
+    font-size: 17px;
+}
