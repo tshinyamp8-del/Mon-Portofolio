@@ -351,3 +351,37 @@ footer {
     list-style-position: inside;
     /* pour garder les puces visibles */
 }
+
+/* ---- Mise en page CV ---- */
+
+.cv-container {
+    max-width: 900px;
+    margin: 100px auto;
+    /* centre le bloc mais aligne le texte à gauche */
+    background: #0b132b;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+    text-align: left;
+    /* 👈 le plus important pour aligner */
+}
+
+.cv-container h1,
+.cv-container h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.cv-container p {
+    margin-bottom: 16px;
+    line-height: 1.7;
+}
+
+.cv-container ul {
+    margin-bottom: 25px;
+    padding-left: 25px;
+}
+
+.cv-container li {
+    margin-bottom: 10px;
+}
