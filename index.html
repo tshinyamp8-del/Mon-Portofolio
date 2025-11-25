@@ -2,50 +2,60 @@
 <html lang="fr">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Accueil — Kamey Tshinyam Parfait</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamey Tshinyam Parfait — Portfolio</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="menu-top">
-        <a href="index.html">Accueil</a>
-        <a href="cv.html">CV</a>
-        <a href="projet.html">Projets</a>
-        <a href="contact.html">Contact</a>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="logo">Kamey Tshinyam Parfait</div>
+        <div class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="cv.html">CV</a>
+            <a href="projet.html">Projets</a>
+            <a href="contact.html">Contact</a>
+        </div>
     </nav>
 
-    <main class="hero">
+    <!-- HERO -->
+    <section class="hero">
 
-        <!-- Colonne gauche -->
-        <div class="left">
-            <img src="profil.jpeg" class="big-photo" alt="Photo de profil">
+        <img src="profil.jpeg" class="hero-img" alt="Photo">
 
-            <h1 class="name">Kamey Tshinyam Parfait</h1>
-            <p class="role">Développeur Web — Modern UI & Responsive Design</p>
+        <h1 class="title">Kamey Tshinyam Parfait</h1>
+        <p class="subtitle">Développeur Web • Création de sites modernes & responsive</p>
 
-            <div class="btn-group">
-                <a class="btn" href="cv.html">Mon CV</a>
-                <a class="btn" href="projet.html">Mes projets</a>
-                <a class="btn" href="contact.html">Me contacter</a>
-            </div>
+        <div class="socials">
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://twitter.com" target="_blank">X</a>
         </div>
 
-        <!-- Colonne droite -->
-        <div class="right">
-            <div class="socials">
-                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-                <a href="https://instagram.com" target="_blank">Instagram</a>
-                <a href="https://twitter.com" target="_blank">X</a>
-                <a href="https://youtube.com" target="_blank">YouTube</a>
-            </div>
+        <div class="buttons">
+            <a href="cv.html" class="btn">Voir mon CV</a>
+            <a href="projet.html" class="btn">Mes projets</a>
+            <a href="contact.html" class="btn secondary">Me contacter</a>
         </div>
 
-    </main>
+        <p class="intro">
+            👋 Bienvenue ! Je suis développeur Web passionné par le design, l’expérience utilisateur
+            et le développement moderne. Explore mon univers ci-dessous.
+        </p>
+
+    </section>
+
+    <footer>
+        © 2025 — Kamey Tshinyam Parfait
+    </footer>
 
 </body>
 
