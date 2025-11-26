@@ -385,3 +385,39 @@ footer {
 .cv-container li {
     margin-bottom: 10px;
 }
+
+/* === SPÉCIFIQUE À LA PAGE CV === */
+.cv-page .cv-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.cv-page .cv-nav .brand a {
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #00aaff;
+}
+
+.cv-page .cv-nav .menu a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #ddd;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.cv-page .cv-nav .menu a:hover {
+    color: #00aaff;
+}
+
+.cv-page .cv-nav .menu .active {
+    color: #00aaff;
+    font-weight: bold;
+    border-bottom: 2px solid #00aaff;
+}
