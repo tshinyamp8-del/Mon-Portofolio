@@ -459,3 +459,18 @@ footer {
     transform: scale(1.05);
     opacity: 0.9;
 }
+
+/* Fix alignement du contenu CV */
+.cv-page .card {
+    text-align: left;
+}
+
+.cv-page .card ul {
+    margin-left: 20px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.cv-page .card li {
+    text-align: left;
+}
